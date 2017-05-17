@@ -1,0 +1,148 @@
+###################################
+Starting     NMF.py with K=40, ngrame=1 and n_features=50000
+7333 documents found
+Extracting tf-idf features for NMF...
+done in 34.562s.
+4004
+Adding features to db
+done in 12.817s.
+Traceback (most recent call last):
+  File "code/nmf_multi.py", line 390, in <module>
+    main()
+  File "code/nmf_multi.py", line 238, in main
+    topic_ids = db.add_topics(K)
+  File "/home/galm/software/tmv/BasicBrowser/db.py", line 82, in add_topics
+    topicrow = Topic(title=title,run_id=run_id)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "51": "Topic.run_id" must be a "RunStats" instance.
+###################################
+Starting     NMF.py with K=40, ngrame=1 and n_features=50000
+7333 documents found
+Extracting tf-idf features for NMF...
+done in 33.701s.
+4004
+Adding features to db
+done in 12.327s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 2.131s.
+Adding topicterms to db
+done in 6.595s.
+making sparse matrix
+done in 0.075s.
+adding 31506 doctopics to the db
+done in 61.342s.
+Making the objects took in 1.637s.
+Adding the objects took in 59.498s.
+updating features in db
+done in 11.810s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 7.713s.
+Adding topicterms to db
+done in 4.624s.
+making sparse matrix
+done in 0.161s.
+adding 50882 doctopics to the db
+done in 68.571s.
+Making the objects took in 2.040s.
+Adding the objects took in 66.275s.
+updating features in db
+done in 16.718s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 7.175s.
+Adding topicterms to db
+done in 3.795s.
+making sparse matrix
+done in 0.267s.
+adding 62010 doctopics to the db
+done in 76.625s.
+Making the objects took in 1.973s.
+Adding the objects took in 74.391s.
+updating features in db
+done in 12.406s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 10.176s.
+Adding topicterms to db
+done in 4.622s.
+making sparse matrix
+done in 0.386s.
+adding 71731 doctopics to the db
+done in 95.506s.
+Making the objects took in 2.044s.
+Adding the objects took in 93.156s.
+updating features in db
+done in 12.207s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 15.123s.
+Adding topicterms to db
+done in 5.912s.
+making sparse matrix
+done in 0.357s.
+adding 78527 doctopics to the db
+done in 110.883s.
+Making the objects took in 2.149s.
+Adding the objects took in 108.447s.
+updating features in db
+done in 14.917s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 12.962s.
+Adding topicterms to db
+done in 3.862s.
+making sparse matrix
+done in 0.449s.
+adding 84305 doctopics to the db
+done in 116.341s.
+Making the objects took in 2.362s.
+Adding the objects took in 113.659s.
+updating features in db
+done in 15.136s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 28.201s.
+Adding topicterms to db
+done in 5.014s.
+making sparse matrix
+done in 0.771s.
+adding 91575 doctopics to the db
+done in 119.324s.
+Making the objects took in 2.396s.
+Adding the objects took in 116.566s.
+updating features in db
+done in 12.219s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 22.273s.
+Adding topicterms to db
+done in 6.118s.
+making sparse matrix
+done in 0.764s.
+adding 97199 doctopics to the db
+done in 130.726s.
+Making the objects took in 2.397s.
+Adding the objects took in 127.978s.
+updating features in db
+done in 13.044s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 25.757s.
+Adding topicterms to db
+done in 3.746s.
+making sparse matrix
+done in 1.166s.
+adding 109061 doctopics to the db
+done in 151.343s.
+Making the objects took in 4.061s.
+Adding the objects took in 146.692s.
+updating features in db
+done in 17.756s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 48.903s.
+Adding topicterms to db
+done in 3.952s.
+making sparse matrix
+done in 1.716s.
+adding 97957 doctopics to the db
+done in 145.887s.
+Making the objects took in 2.472s.
+Adding the objects took in 143.062s.
+done! total time: 24 minutes and 47 seconds
+a maximum of 294.58 MB was used
