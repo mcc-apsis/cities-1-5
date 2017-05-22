@@ -146,3 +146,67 @@ Making the objects took in 2.472s.
 Adding the objects took in 143.062s.
 done! total time: 24 minutes and 47 seconds
 a maximum of 294.58 MB was used
+Loading required package: methods
+Loading required package: DBI
+Warning messages:
+1: replacing previous import ‘dplyr::union’ by ‘igraph::union’ when loading ‘scimetrix’ 
+2: replacing previous import ‘dplyr::as_data_frame’ by ‘igraph::as_data_frame’ when loading ‘scimetrix’ 
+3: replacing previous import ‘dplyr::groups’ by ‘igraph::groups’ when loading ‘scimetrix’ 
+4: replacing previous import ‘dplyr::%>%’ by ‘igraph::%>%’ when loading ‘scimetrix’ 
+5: replacing previous import ‘igraph::crossing’ by ‘tidyr::crossing’ when loading ‘scimetrix’ 
+6: replacing previous import ‘igraph::%>%’ by ‘tidyr::%>%’ when loading ‘scimetrix’ 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: NLP
+[1] 7077  449
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.009644 0.047435 0.056399 0.059101 0.066273 0.189756 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  382.0   545.5   746.0   949.1  1066.5  8396.0 
+[1] 7077  303
+Optimal number of topics = 3
+There were 14 warnings (use warnings() to see them)
+There were 14 warnings (use warnings() to see them)
+Loading required package: methods
+Loading required package: DBI
+Warning messages:
+1: replacing previous import ‘dplyr::union’ by ‘igraph::union’ when loading ‘scimetrix’ 
+2: replacing previous import ‘dplyr::as_data_frame’ by ‘igraph::as_data_frame’ when loading ‘scimetrix’ 
+3: replacing previous import ‘dplyr::groups’ by ‘igraph::groups’ when loading ‘scimetrix’ 
+4: replacing previous import ‘dplyr::%>%’ by ‘igraph::%>%’ when loading ‘scimetrix’ 
+5: replacing previous import ‘igraph::crossing’ by ‘tidyr::crossing’ when loading ‘scimetrix’ 
+6: replacing previous import ‘igraph::%>%’ by ‘tidyr::%>%’ when loading ‘scimetrix’ 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: NLP
+[1] 7077  449
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.009644 0.047435 0.056399 0.059101 0.066273 0.189756 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  382.0   545.5   746.0   949.1  1066.5  8396.0 
+[1] 7077  303
+
+Grab a cup of coffee this could take a while...
+
+10 of 60 iterations (Current: 02:51:55; Elapsed: 8 mins)
+20 of 60 iterations (Current: 03:14:06; Elapsed: 30.2 mins; Remaining: ~236.5 mins)
+30 of 60 iterations (Current: 03:49:04; Elapsed: 65.1 mins; Remaining: ~192.6 mins)
+40 of 60 iterations (Current: 04:38:14; Elapsed: 114.3 mins; Remaining: ~141.5 mins)

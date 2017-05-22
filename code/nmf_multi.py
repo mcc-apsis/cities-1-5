@@ -163,7 +163,7 @@ def main():
     stoplist.add('copyright')
 
     #docs = Doc.objects.filter(query=893,content__iregex='\w').values('UT','title','content')
-    docs = Doc.objects.filter(query=1002,content__iregex='\w')
+    docs = Doc.objects.filter(query=1053,content__iregex='\w')
     docs = docs#.values('UT','content')
     if limit is not False:
         docs = docs[:limit]
@@ -206,7 +206,7 @@ def main():
 
     print(len(vocab))
 
-    Ks = [10,20,30,40,50,60,70,80,100,150]
+    Ks = [25,26,27,28,29,30,31,32,33,34,35]
     for i in range(len(Ks)):
         if i > 500:
             recreate_indexes = True
