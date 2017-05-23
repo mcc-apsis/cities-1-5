@@ -38,6 +38,7 @@ from django.utils import timezone
 from scipy.sparse import csr_matrix, find
 import numpy as np
 import psycopg2
+import subprocess
 
 #conn = psycopg2.connect("dbname=tmv_app user=tmv password=topicmodels")
 
@@ -384,6 +385,10 @@ def main():
         stats.last_update=timezone.now()
         stats.save()
         django.db.connections.close_all()
+    subprocess.Popen(["python3",
+        "/home/galm/software/tmv/BasicBrowser/update_all__topics.py",
+        str(73)
+    ]).wait()
 
 if __name__ == '__main__':
     t0 = time()
