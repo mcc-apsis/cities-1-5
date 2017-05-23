@@ -5,119 +5,96 @@
          http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
 <!-- Created by igraph -->
   <key id="v_name" for="node" attr.name="name" attr.type="string"/>
-  <key id="v_label" for="node" attr.name="label" attr.type="double"/>
-  <key id="v_size" for="node" attr.name="size" attr.type="double"/>
+  <key id="v_lsize" for="node" attr.name="lsize" attr.type="double"/>
   <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
   <graph id="G" edgedefault="undirected">
     <node id="n0">
       <data key="v_name">{activ, school, walk}</data>
-      <data key="v_label">1</data>
-      <data key="v_size">12.0982774297804</data>
+      <data key="v_lsize">12.0982774297804</data>
     </node>
     <node id="n1">
       <data key="v_name">{air, pollut, exposur}</data>
-      <data key="v_label">2</data>
-      <data key="v_size">9.14555304983458</data>
+      <data key="v_lsize">9.14555304983458</data>
     </node>
     <node id="n2">
       <data key="v_name">{bicycl, cycl, cyclist}</data>
-      <data key="v_label">3</data>
-      <data key="v_size">5.17530382793418</data>
+      <data key="v_lsize">5.17530382793418</data>
     </node>
     <node id="n3">
       <data key="v_name">{build, energi, perform}</data>
-      <data key="v_label">4</data>
-      <data key="v_size">12.621462550621</data>
+      <data key="v_lsize">12.621462550621</data>
     </node>
     <node id="n4">
       <data key="v_name">{emiss, carbon, ghg}</data>
-      <data key="v_label">5</data>
-      <data key="v_size">8.86160536871904</data>
+      <data key="v_lsize">8.86160536871904</data>
     </node>
     <node id="n5">
       <data key="v_name">{energi, consumpt, effici}</data>
-      <data key="v_label">6</data>
-      <data key="v_size">15.1632182218246</data>
+      <data key="v_lsize">15.1632182218246</data>
     </node>
     <node id="n6">
       <data key="v_name">{green, roof, infrastructur}</data>
-      <data key="v_label">7</data>
-      <data key="v_size">5.43855459341604</data>
+      <data key="v_lsize">5.43855459341604</data>
     </node>
     <node id="n7">
       <data key="v_name">{heat, thermal, temperatur}</data>
-      <data key="v_label">8</data>
-      <data key="v_size">11.6811670429652</data>
+      <data key="v_lsize">11.6811670429652</data>
     </node>
     <node id="n8">
       <data key="v_name">{hous, passiv, construct}</data>
-      <data key="v_label">9</data>
-      <data key="v_size">5.40596720567941</data>
+      <data key="v_lsize">5.40596720567941</data>
     </node>
     <node id="n9">
       <data key="v_name">{model, network, optim}</data>
-      <data key="v_label">10</data>
-      <data key="v_size">18.5864989568875</data>
+      <data key="v_lsize">18.5864989568875</data>
     </node>
     <node id="n10">
       <data key="v_name">{park, space, price}</data>
-      <data key="v_label">11</data>
-      <data key="v_size">7.47675219162324</data>
+      <data key="v_lsize">7.47675219162324</data>
     </node>
     <node id="n11">
       <data key="v_name">{polici, develop, plan}</data>
-      <data key="v_label">12</data>
-      <data key="v_size">30</data>
+      <data key="v_lsize">30</data>
     </node>
     <node id="n12">
       <data key="v_name">{price, congest, road}</data>
-      <data key="v_label">13</data>
-      <data key="v_size">11.4025146173063</data>
+      <data key="v_lsize">11.4025146173063</data>
     </node>
     <node id="n13">
       <data key="v_name">{recycl, household, collect}</data>
-      <data key="v_label">14</data>
-      <data key="v_size">7.16424156120838</data>
+      <data key="v_lsize">7.16424156120838</data>
     </node>
     <node id="n14">
       <data key="v_name">{toll, lane, link}</data>
-      <data key="v_label">15</data>
-      <data key="v_size">5.91805228393263</data>
+      <data key="v_lsize">5.91805228393263</data>
     </node>
     <node id="n15">
       <data key="v_name">{transit, bus, servic}</data>
-      <data key="v_label">16</data>
-      <data key="v_size">11.5290880895546</data>
+      <data key="v_lsize">11.5290880895546</data>
     </node>
     <node id="n16">
       <data key="v_name">{transport, public, servic}</data>
-      <data key="v_label">17</data>
-      <data key="v_size">12.6932291616275</data>
+      <data key="v_lsize">12.6932291616275</data>
     </node>
     <node id="n17">
       <data key="v_name">{travel, mode, choic}</data>
-      <data key="v_label">18</data>
-      <data key="v_size">13.4051085742232</data>
+      <data key="v_lsize">13.4051085742232</data>
     </node>
     <node id="n18">
       <data key="v_name">{treatment, water, wastewat}</data>
-      <data key="v_label">19</data>
-      <data key="v_size">8.31976209801365</data>
+      <data key="v_lsize">8.31976209801365</data>
     </node>
     <node id="n19">
       <data key="v_name">{urban, land, citi}</data>
-      <data key="v_label">20</data>
-      <data key="v_size">13.0159955725625</data>
+      <data key="v_lsize">13.0159955725625</data>
     </node>
     <node id="n20">
       <data key="v_name">{vehicl, charg, electr}</data>
-      <data key="v_label">21</data>
-      <data key="v_size">8.45906641121517</data>
+      <data key="v_lsize">8.45906641121517</data>
     </node>
     <node id="n21">
       <data key="v_name">{wast, manag, solid}</data>
-      <data key="v_label">22</data>
-      <data key="v_size">13.4803385883199</data>
+      <data key="v_lsize">13.4803385883199</data>
     </node>
     <edge source="n0" target="n2">
       <data key="e_weight">0.0955153001428153</data>
