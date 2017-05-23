@@ -50,7 +50,7 @@ sys.path.append('/home/galm/software/tmv/BasicBrowser/')
 # sys.path.append('/home/max/Desktop/django/BasicBrowser/')
 import db as db
 from tmv_app.models import *
-from scoping.models import Doc
+from scoping.models import Doc, Query
 from django.db import connection, transaction
 cursor = connection.cursor()
 
@@ -127,10 +127,9 @@ def main():
 
     # The number of topics
     try:
-        K = int(sys.argv[1])
-        print(K)
+        qid = int(sys.argv[1])
     except:
-        K = 40
+        qid = 894
     # The n in ngram
     try:
         ng = int(sys.argv[2])
@@ -148,7 +147,7 @@ def main():
         limit = False
 
     print("###################################\nStarting \
-    NMF.py with K={}, ngrame={} and n_features={}".format(K,ng,n_features))
+    NMF.py with ngrams={} and n_features={}".format(ng,n_features))
 
     n_samples = 1000
 
@@ -164,7 +163,7 @@ def main():
     stoplist.add('copyright')
 
     #docs = Doc.objects.filter(query=893,content__iregex='\w').values('UT','title','content')
-    docs = Doc.objects.filter(query=1053,content__iregex='\w')
+    docs = Doc.objects.filter(query=qid,content__iregex='\w')
     docs = docs#.values('UT','content')
     if limit is not False:
         docs = docs[:limit]
@@ -207,7 +206,9 @@ def main():
 
     print(len(vocab))
 
-    Ks = [25,26,27,28,29,30,31,32,33,34,35]
+    Ks = [15,16,17,18,19,20,21,21,23,24]
+    Ks = list(range(15,35))
+    Ks = [22]
     for i in range(len(Ks)):
         if i > 500:
             recreate_indexes = True
@@ -383,10 +384,11 @@ def main():
         stats.iterations = nmf.n_iter_
         stats.method = "nm"
         stats.last_update=timezone.now()
+        stats.query=Query.objects.get(pk=qid)
         stats.save()
         django.db.connections.close_all()
     subprocess.Popen(["python3",
-        "/home/galm/software/tmv/BasicBrowser/update_all__topics.py",
+        "/home/galm/software/tmv/BasicBrowser/update_all_topics.py",
         str(73)
     ]).wait()
 

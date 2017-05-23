@@ -354,3 +354,271 @@ done! total time: 24 minutes and 49 seconds
 a maximum of 249.484 MB was used
 60 of 60 iterations (Current: 07:00:53; Elapsed: 256.9 mins; Remaining: ~0 mins)
 Optimal number of topics = 60
+Traceback (most recent call last):
+  File "code/nmf_multi.py", line 51, in <module>
+    import db as db
+  File "/home/galm/software/tmv/BasicBrowser/db.py", line 12, in <module>
+    django.setup()
+  File "/usr/local/lib/python3.4/dist-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python3.4/dist-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/local/lib/python3.4/dist-packages/django/apps/config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib/python3.4/dist-packages/debug_toolbar/apps.py", line 12, in <module>
+    from debug_toolbar.middleware import DebugToolbarMiddleware
+  File "/usr/local/lib/python3.4/dist-packages/debug_toolbar/middleware.py", line 17, in <module>
+    from debug_toolbar.toolbar import DebugToolbar
+  File "/usr/local/lib/python3.4/dist-packages/debug_toolbar/toolbar.py", line 151, in <module>
+    urlpatterns = DebugToolbar.get_urls()
+  File "/usr/local/lib/python3.4/dist-packages/debug_toolbar/toolbar.py", line 145, in get_urls
+    for panel_class in cls.get_panel_classes():
+  File "/usr/local/lib/python3.4/dist-packages/debug_toolbar/toolbar.py", line 118, in get_panel_classes
+    mod = import_module(panel_module)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib/python3.4/dist-packages/debug_toolbar/panels/templates/__init__.py", line 1, in <module>
+    from debug_toolbar.panels.templates.panel import TemplatesPanel  # noqa
+  File "/usr/local/lib/python3.4/dist-packages/debug_toolbar/panels/templates/panel.py", line 12, in <module>
+    from django.test.signals import template_rendered
+  File "/usr/local/lib/python3.4/dist-packages/django/test/__init__.py", line 5, in <module>
+    from django.test.client import Client, RequestFactory
+  File "/usr/local/lib/python3.4/dist-packages/django/test/client.py", line 22, in <module>
+    from django.test.utils import ContextList
+  File "/usr/local/lib/python3.4/dist-packages/django/test/utils.py", line 28, in <module>
+    import jinja2
+  File "/usr/local/lib/python3.4/dist-packages/jinja2/__init__.py", line 33, in <module>
+    from jinja2.environment import Environment, Template
+  File "/usr/local/lib/python3.4/dist-packages/jinja2/environment.py", line 22, in <module>
+    from jinja2.lexer import get_lexer, TokenStream
+  File "/usr/local/lib/python3.4/dist-packages/jinja2/lexer.py", line 57, in <module>
+    name_re = _make_name_re()
+  File "/usr/local/lib/python3.4/dist-packages/jinja2/lexer.py", line 46, in _make_name_re
+    _stringdefs.xid_continue))
+  File "/usr/lib/python3.4/re.py", line 223, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.4/re.py", line 294, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.4/sre_compile.py", line 568, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.4/sre_parse.py", line 760, in parse
+    p = _parse_sub(source, pattern, 0)
+  File "/usr/lib/python3.4/sre_parse.py", line 370, in _parse_sub
+    itemsappend(_parse(source, state))
+  File "/usr/lib/python3.4/sre_parse.py", line 494, in _parse
+    code1 = LITERAL, ord(this)
+KeyboardInterrupt
+###################################
+Starting     NMF.py with K=40, ngrame=1 and n_features=50000
+7077 documents found
+Extracting tf-idf features for NMF...
+done in 33.575s.
+3890
+Adding features to db
+done in 11.700s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 2.772s.
+Adding topicterms to db
+done in 3.322s.
+making sparse matrix
+done in 0.112s.
+adding 41275 doctopics to the db
+done in 72.339s.
+Making the objects took in 1.602s.
+Adding the objects took in 70.511s.
+updating features in db
+done in 19.234s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 3.048s.
+Adding topicterms to db
+done in 3.084s.
+making sparse matrix
+done in 0.111s.
+adding 42044 doctopics to the db
+done in 77.298s.
+Making the objects took in 1.608s.
+Adding the objects took in 75.463s.
+updating features in db
+done in 14.824s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 3.212s.
+Adding topicterms to db
+done in 3.799s.
+making sparse matrix
+done in 0.111s.
+adding 44077 doctopics to the db
+done in 67.911s.
+Making the objects took in 1.617s.
+Adding the objects took in 66.007s.
+updating features in db
+done in 19.429s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 3.349s.
+Adding topicterms to db
+done in 3.271s.
+making sparse matrix
+done in 0.120s.
+adding 45298 doctopics to the db
+done in 85.252s.
+Making the objects took in 1.700s.
+Adding the objects took in 83.274s.
+updating features in db
+done in 11.924s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 3.436s.
+Adding topicterms to db
+done in 4.949s.
+making sparse matrix
+done in 0.141s.
+adding 46215 doctopics to the db
+done in 95.591s.
+Making the objects took in 1.715s.
+Adding the objects took in 93.583s.
+updating features in db
+done in 11.632s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 4.093s.
+Adding topicterms to db
+done in 4.612s.
+making sparse matrix
+done in 0.149s.
+adding 48680 doctopics to the db
+done in 80.417s.
+Making the objects took in 1.660s.
+Adding the objects took in 78.458s.
+updating features in db
+done in 17.844s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 4.159s.
+Adding topicterms to db
+done in 4.339s.
+making sparse matrix
+done in 0.145s.
+adding 49638 doctopics to the db
+done in 96.329s.
+Making the objects took in 1.698s.
+Adding the objects took in 94.320s.
+updating features in db
+done in 11.934s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 4.123s.
+Adding topicterms to db
+done in 4.507s.
+making sparse matrix
+done in 0.147s.
+adding 49638 doctopics to the db
+done in 85.741s.
+Making the objects took in 1.626s.
+Adding the objects took in 83.814s.
+updating features in db
+done in 12.137s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 6.138s.
+Adding topicterms to db
+done in 6.884s.
+making sparse matrix
+done in 0.177s.
+adding 53244 doctopics to the db
+done in 89.299s.
+Making the objects took in 1.744s.
+Adding the objects took in 87.226s.
+updating features in db
+done in 16.755s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 5.059s.
+Adding topicterms to db
+done in 6.515s.
+making sparse matrix
+done in 0.183s.
+adding 54882 doctopics to the db
+74
+done! total time: 0 minutes and 1.19 seconds
+a maximum of 141.068 MB was used
+75
+done! total time: 0 minutes and 1.5 seconds
+a maximum of 141.048 MB was used
+76
+done! total time: 0 minutes and 1.54 seconds
+a maximum of 141.364 MB was used
+77
+done! total time: 0 minutes and 1.57 seconds
+a maximum of 141.588 MB was used
+78
+done! total time: 0 minutes and 1.51 seconds
+a maximum of 141.696 MB was used
+79
+done! total time: 0 minutes and 1.61 seconds
+a maximum of 142.6 MB was used
+81
+done! total time: 0 minutes and 2.14 seconds
+a maximum of 144.216 MB was used
+82
+done! total time: 0 minutes and 1.99 seconds
+a maximum of 145.208 MB was used
+83
+done! total time: 0 minutes and 2.17 seconds
+a maximum of 144.268 MB was used
+84
+done! total time: 0 minutes and 2.02 seconds
+a maximum of 144.4 MB was used
+80
+done! total time: 0 minutes and 1.72 seconds
+a maximum of 143.9 MB was used
+85
+done! total time: 0 minutes and 0.6 seconds
+a maximum of 133.944 MB was used
+86
+done! total time: 0 minutes and 0.73 seconds
+a maximum of 134.664 MB was used
+87
+done! total time: 0 minutes and 0.66 seconds
+a maximum of 135.96 MB was used
+88
+done! total time: 0 minutes and 0.87 seconds
+a maximum of 135.904 MB was used
+89
+done! total time: 0 minutes and 0.81 seconds
+a maximum of 135.644 MB was used
+90
+done! total time: 0 minutes and 0.83 seconds
+a maximum of 137.172 MB was used
+91
+done! total time: 0 minutes and 1.02 seconds
+a maximum of 137.708 MB was used
+92
+done! total time: 0 minutes and 0.94 seconds
+a maximum of 137.672 MB was used
+93
+done! total time: 0 minutes and 1.16 seconds
+a maximum of 139.588 MB was used
+94
+done! total time: 0 minutes and 1.1 seconds
+a maximum of 140.34 MB was used
+74
+75
+76
+77
+78
+79
+81
+82
+83
+84
+80
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+done in 81.226s.
+Making the objects took in 1.891s.
+Adding the objects took in 79.001s.
+done! total time: 20 minutes and 55 seconds
+a maximum of 243.16 MB was used
