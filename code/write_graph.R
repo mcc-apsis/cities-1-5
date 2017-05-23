@@ -24,7 +24,7 @@ con <- dbConnect(drv, dbname = "tmv_app",
 q <- 'SELECT "tmv_app_topic"."title", T3."title", "tmv_app_topiccorr"."score" FROM "tmv_app_topiccorr" 
   LEFT OUTER JOIN "tmv_app_topic" ON ("tmv_app_topiccorr"."topic_id" = "tmv_app_topic"."id") 
   LEFT OUTER JOIN "tmv_app_topic" T3 ON ("tmv_app_topiccorr"."topiccorr_id" = T3."id") 
-  WHERE ("tmv_app_topiccorr"."run_id" = 96)'
+  WHERE ("tmv_app_topiccorr"."run_id" = 96 AND "tmv_app_topiccorr"."score" > 0.025)'
 
 cors <- data.frame(dbGetQuery(con, q)) %>%
   spread(title.1,score,fill=0) 
