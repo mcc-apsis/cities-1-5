@@ -43,3 +43,5 @@ layout1 <- layout.fruchterman.reingold(g, niter = 500)
 b1 <- degree(g)
 V(g)$label.cex <- b1 * 2/max(b1)
 V(g)$size <- b1 * 30/max(b1)
+
+write.graph(g,file="plots/96.graphml", format="graphml")
