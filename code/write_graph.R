@@ -46,7 +46,7 @@ tscores <- data.frame(dbGetQuery(con, q)) %>%
 
 layout1 <- layout.fruchterman.reingold(g, niter = 500)
 b1 <- tscores$score
-V(g)$label <- V(g)
-V(g)$size <- b1 * 30/max(b1)
+#V(g)$label <- V(g)
+V(g)$lsize <- b1 * 30/max(b1)
 
 write.graph(g,file="plots/96_025.graphml", format="graphml")

@@ -208,7 +208,7 @@ def main():
 
     Ks = [15,16,17,18,19,20,21,21,23,24]
     Ks = list(range(15,35))
-    Ks = [22]
+    Ks = [21,22,23]
     for i in range(len(Ks)):
         if i > 500:
             recreate_indexes = True
@@ -216,6 +216,11 @@ def main():
             recreate_indexes = False
         global run_id
         run_id = db.init(n_features,ng)
+        stat = RunStats.objects.get(run_id=run_id)
+        stat.query = Query.objects.get(pk=qid)
+        stat.save()
+        if i == 0:
+            frun = run_id
         K = Ks[i]
         # add terms to db
         if i==0:
@@ -389,7 +394,7 @@ def main():
         django.db.connections.close_all()
     subprocess.Popen(["python3",
         "/home/galm/software/tmv/BasicBrowser/update_all_topics.py",
-        str(73)
+        str(frun-1)
     ]).wait()
 
 if __name__ == '__main__':
