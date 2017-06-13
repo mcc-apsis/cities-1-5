@@ -33,7 +33,7 @@ q <- paste0('SELECT "scoping_doc"."UT", "scoping_doc"."PY", "scoping_wc"."oecd",
 
 alldocs <- data.frame(dbGetQuery(con, q)) 
 
-alldocs <- filter(alldocs,PY>1985,PY<2017)
+alldocs <- filter(alldocs,PY>1985)
 
 pn <- scimetrix::paperNumbers(alldocs,"oecd",graph=T) + scale_x_continuous(breaks = seq(1985,2020,by=5))
 
@@ -71,7 +71,7 @@ apCounts <- papers %>%
 ### Figure 1: Growth
 growth <- ggplot() +
   geom_bar( # Bars for each year, colour coded by AP
-    data = filter(papers,PY > 1985 & PY < 2017),
+    data = filter(papers,PY > 1985),
     aes(PY,n,fill=AP),
     stat="identity",
     colour="grey22"
@@ -79,12 +79,13 @@ growth <- ggplot() +
   geom_text( # Labels
     data=apCounts,
     aes(label=total,x=midY,y=maxV+100),
-    hjust = 0.5
+    hjust = 0.5,
+    size=6
   ) +
   labs(x="Year",y="Number of Publications") +
   theme_classic() +
   theme(
-    text=element_text(size=12),
+    #text=element_text(size=18),
     legend.position=c(0.1,0.9),
     legend.justification=c(0,1),
     legend.direction="horizontal",
@@ -99,6 +100,18 @@ ggsave("plots/total_growth.png")
 
 library(gridExtra)
 
+t <- theme(text=element_text(size=18),panel.grid.major.y=element_line(size=0.2,colour="grey22"))
+
+pn <- pn +   geom_text( # Labels
+  data=apCounts,
+  aes(label=total,x=midY,y=maxV+100),
+  hjust = 0.5,
+  size=6,
+  colour=NA
+)
+
+pn
+
 png("plots/growth_combined.png",width=1000,height=600)
-grid.arrange(growth,pn,ncol=2)
+grid.arrange(growth + t,pn + t,ncol=2)
 dev.off()
