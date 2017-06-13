@@ -1,176 +1,200 @@
 #########################
-{activ, school, walk}
-48.5953042033	Public, Environmental & Occupational Health	13.4775352346
-48.5953042033	Economics	3.85304487061
-48.5953042033	Engineering, Civil	3.74031641448
-48.5953042033	Environmental Sciences	3.45724679574
-48.5953042033	Environmental Studies	3.17678031208
+{activ, school, health}
+51.9749040852	Public, Environmental & Occupational Health	13.4165291757
+51.9749040852	Environmental Sciences	4.50824968246
+51.9749040852	Economics	3.96813152803
+51.9749040852	Engineering, Civil	3.66498083503
+51.9749040852	Environmental Studies	3.49787509563
 
 #########################
-{air, pollut, exposur}
-36.7350587837	Environmental Sciences	9.13350680795
-36.7350587837	Construction & Building Technology	4.82830974003
-36.7350587837	Engineering, Environmental	3.35249950245
-36.7350587837	Engineering, Civil	2.64019762811
-36.7350587837	Economics	2.27243195316
+{air, pollut, qualiti}
+37.0376483542	Environmental Sciences	9.19486499525
+37.0376483542	Construction & Building Technology	4.16414237321
+37.0376483542	Engineering, Environmental	3.63324012544
+37.0376483542	Energy & Fuels	2.6590582637
+37.0376483542	Public, Environmental & Occupational Health	2.09362785534
 
 #########################
 {bicycl, cycl, cyclist}
-20.7877084422	Engineering, Civil	5.37846153364
-20.7877084422	Economics	2.96074934085
-20.7877084422	Environmental Studies	2.14090983488
-20.7877084422	Public, Environmental & Occupational Health	1.99252079411
-20.7877084422	Transportation	0.802475008737
+21.8882726292	Engineering, Civil	5.33451856649
+21.8882726292	Economics	2.98736288223
+21.8882726292	Environmental Studies	2.16318055824
+21.8882726292	Public, Environmental & Occupational Health	2.0376362939
+21.8882726292	Environmental Sciences	0.973610947841
 
 #########################
-{build, energi, perform}
-50.6967885055	Construction & Building Technology	21.6188305843
-50.6967885055	Energy & Fuels	12.0034830214
-50.6967885055	Thermodynamics	3.52532789134
-50.6967885055	Environmental Sciences	2.33752492311
-50.6967885055	Engineering, Environmental	1.97504492658
+{brt, bus, system}
+12.8156905447	Engineering, Civil	4.77700205325
+12.8156905447	Economics	3.85867860847
+12.8156905447	Transportation	1.17652451189
+12.8156905447	Transportation Science & Technology	0.738970427117
+12.8156905447	Geography	0.545326326247
+
+#########################
+{bus, servic, oper}
+37.6431807403	Engineering, Civil	9.98859790845
+37.6431807403	Economics	8.00538778685
+37.6431807403	Transportation	1.95002145706
+37.6431807403	Environmental Sciences	1.77397432158
+37.6431807403	Environmental Studies	1.61435010456
+
+#########################
+{climat, chang, mitig}
+32.5218323632	Environmental Sciences	5.01427092966
+32.5218323632	Environmental Studies	4.96740081058
+32.5218323632	Energy & Fuels	3.23256725303
+32.5218323632	Construction & Building Technology	3.0603315243
+32.5218323632	Engineering, Environmental	1.84646127051
+
+#########################
+{develop, sustain, plan}
+127.69988399	Engineering, Civil	15.8310191112
+127.69988399	Environmental Studies	13.6191051008
+127.69988399	Economics	13.1967060456
+127.69988399	Engineering, Environmental	12.4107746414
+127.69988399	Environmental Sciences	10.3384275257
 
 #########################
 {emiss, carbon, ghg}
-35.5945225361	Energy & Fuels	6.31251104355
-35.5945225361	Environmental Sciences	5.70432512287
-35.5945225361	Engineering, Environmental	4.76128027129
-35.5945225361	Environmental Studies	4.10058174352
-35.5945225361	Construction & Building Technology	3.67185659765
+51.3328521084	Energy & Fuels	9.89252067591
+51.3328521084	Environmental Sciences	8.06080461999
+51.3328521084	Engineering, Environmental	7.06981830242
+51.3328521084	Environmental Studies	4.49963781599
+51.3328521084	Construction & Building Technology	3.23834752152
 
 #########################
-{energi, consumpt, effici}
-60.9062907069	Construction & Building Technology	19.6123741675
-60.9062907069	Energy & Fuels	17.4318129971
-60.9062907069	Thermodynamics	5.83162991068
-60.9062907069	Engineering, Environmental	3.43297757556
-60.9062907069	Environmental Sciences	2.57816118759
+{energi, build, consumpt}
+79.5059530215	Construction & Building Technology	26.0680190985
+79.5059530215	Energy & Fuels	20.9683312349
+79.5059530215	Thermodynamics	6.61158428838
+79.5059530215	Engineering, Environmental	4.01185226829
+79.5059530215	Environmental Sciences	3.77408961817
 
 #########################
-{green, roof, infrastructur}
-21.8451111265	Environmental Sciences	2.96040621893
-21.8451111265	Construction & Building Technology	2.91011924593
-21.8451111265	Ecology	2.37442095945
-21.8451111265	Energy & Fuels	1.76106225152
-21.8451111265	Environmental Studies	1.6810867553
+{green, build, roof}
+24.2264567236	Construction & Building Technology	3.92799114994
+24.2264567236	Environmental Sciences	2.84604183726
+24.2264567236	Ecology	2.43531874536
+24.2264567236	Energy & Fuels	2.34647868615
+24.2264567236	Environmental Studies	1.86975761208
 
 #########################
-{heat, thermal, temperatur}
-46.919891629	Construction & Building Technology	18.968619845
-46.919891629	Energy & Fuels	10.4743972034
-46.919891629	Thermodynamics	6.02367883636
-46.919891629	Environmental Sciences	2.00608790553
-46.919891629	Engineering, Civil	1.05265500326
-
-#########################
-{hous, passiv, construct}
-21.7142169534	Construction & Building Technology	6.06712918144
-21.7142169534	Energy & Fuels	3.19183884067
-21.7142169534	Environmental Studies	2.51396121541
-21.7142169534	Economics	2.00176607122
-21.7142169534	Engineering, Civil	1.29133215768
+{heat, thermal, comfort}
+53.2097643288	Construction & Building Technology	21.6352431707
+53.2097643288	Energy & Fuels	11.2928184651
+53.2097643288	Thermodynamics	5.83118983974
+53.2097643288	Environmental Sciences	2.36250802178
+53.2097643288	Engineering, Environmental	1.31291295447
 
 #########################
 {model, network, optim}
-74.6566257987	Economics	11.8552941261
-74.6566257987	Engineering, Civil	11.3832835698
-74.6566257987	Construction & Building Technology	5.60399455767
-74.6566257987	Energy & Fuels	4.035748052
-74.6566257987	Engineering, Environmental	3.78933255872
+74.3878385408	Economics	11.0901594287
+74.3878385408	Engineering, Civil	10.4649801224
+74.3878385408	Construction & Building Technology	5.38042311698
+74.3878385408	Energy & Fuels	4.5071539586
+74.3878385408	Engineering, Environmental	3.85395256706
 
 #########################
 {park, space, price}
-30.0319652375	Economics	9.1898668993
-30.0319652375	Engineering, Civil	7.60977843857
-30.0319652375	Environmental Studies	1.93434013134
-30.0319652375	Transportation	1.89258665097
-30.0319652375	Transportation Science & Technology	1.79145857493
+30.4606915431	Economics	8.93208139715
+30.4606915431	Engineering, Civil	7.58919890329
+30.4606915431	Environmental Studies	1.90186693471
+30.4606915431	Transportation	1.8802110488
+30.4606915431	Transportation Science & Technology	1.78218812258
 
 #########################
-{polici, develop, plan}
-120.501380015	Engineering, Civil	15.4759512577
-120.501380015	Economics	14.1610751693
-120.501380015	Environmental Studies	12.6320888594
-120.501380015	Engineering, Environmental	11.6063430908
-120.501380015	Environmental Sciences	9.45299265107
+{polici, instrument, effect}
+35.2112149064	Economics	6.3945176706
+35.2112149064	Environmental Studies	4.37214496701
+35.2112149064	Energy & Fuels	3.63256528729
+35.2112149064	Engineering, Civil	3.19350611436
+35.2112149064	Environmental Sciences	2.79989769009
 
 #########################
 {price, congest, road}
-45.8006249011	Economics	18.3797637198
-45.8006249011	Engineering, Civil	8.64760236306
-45.8006249011	Environmental Studies	2.97180324444
-45.8006249011	Transportation	2.12077312935
-45.8006249011	Transportation Science & Technology	1.62086223188
+47.6031046671	Economics	18.5658272355
+47.6031046671	Engineering, Civil	8.86828265951
+47.6031046671	Environmental Studies	2.99565320248
+47.6031046671	Transportation	2.19794049815
+47.6031046671	Transportation Science & Technology	1.69090996172
 
 #########################
 {recycl, household, collect}
-28.7766998297	Engineering, Environmental	13.7969911956
-28.7766998297	Environmental Sciences	3.01607429513
-28.7766998297	Environmental Studies	2.35542050488
-28.7766998297	Economics	2.25222687161
-28.7766998297	Ecology	0.741966069848
+29.8054434832	Engineering, Environmental	13.842201437
+29.8054434832	Environmental Sciences	3.13178749455
+29.8054434832	Environmental Studies	2.37789970212
+29.8054434832	Economics	2.27614760939
+29.8054434832	Ecology	0.754850532306
 
 #########################
 {toll, lane, link}
-23.7711155739	Economics	10.7821966415
-23.7711155739	Engineering, Civil	5.7708326353
-23.7711155739	Transportation	1.88086625459
-23.7711155739	Transportation Science & Technology	1.812586403
-23.7711155739	Operations Research & Management Science	0.996479481946
+24.1054432777	Economics	10.7162823583
+24.1054432777	Engineering, Civil	5.7442200186
+24.1054432777	Transportation	1.87181750161
+24.1054432777	Transportation Science & Technology	1.79933542383
+24.1054432777	Operations Research & Management Science	0.998065280811
 
 #########################
-{transit, bus, servic}
-46.3090341704	Engineering, Civil	15.2127653283
-46.3090341704	Economics	11.2732591649
-46.3090341704	Environmental Studies	2.61440118483
-46.3090341704	Transportation	2.60856700439
-46.3090341704	Transportation Science & Technology	1.55970528879
+{transit, rail, station}
+36.1037712319	Engineering, Civil	11.5182244047
+36.1037712319	Economics	8.45521032265
+36.1037712319	Environmental Studies	2.76903586697
+36.1037712319	Transportation	1.89430678866
+36.1037712319	Planning & Development	1.06209016419
 
 #########################
-{transport, public, servic}
-50.985054361	Economics	11.4436932582
-50.985054361	Engineering, Civil	10.9076930032
-50.985054361	Environmental Studies	4.68664943348
-50.985054361	Transportation	3.88365477051
-50.985054361	Environmental Sciences	2.11168928329
+{transport, public, access}
+51.5735333426	Economics	11.0465499089
+51.5735333426	Engineering, Civil	10.6563425655
+51.5735333426	Environmental Studies	4.75324206255
+51.5735333426	Transportation	3.70507358631
+51.5735333426	Environmental Sciences	2.40331162233
 
 #########################
 {travel, mode, choic}
-53.844469415	Economics	15.9944254609
-53.844469415	Engineering, Civil	12.534117017
-53.844469415	Environmental Studies	3.85361849064
-53.844469415	Transportation	2.45499291312
-53.844469415	Transportation Science & Technology	2.3485949638
+56.2391784859	Economics	15.6879910661
+56.2391784859	Engineering, Civil	12.6908986193
+56.2391784859	Environmental Studies	4.04503490395
+56.2391784859	Environmental Sciences	2.72710095593
+56.2391784859	Transportation	2.47888435179
 
 #########################
-{treatment, water, wastewat}
-33.418093807	Engineering, Environmental	10.2723988165
-33.418093807	Environmental Sciences	7.20794810113
-33.418093807	Engineering, Chemical	1.71328171224
-33.418093807	Construction & Building Technology	1.30270494384
-33.418093807	Engineering, Civil	1.25541507477
+{treatment, wastewat, plant}
+36.1584478361	Engineering, Environmental	11.5106017495
+36.1584478361	Environmental Sciences	7.52564763221
+36.1584478361	Engineering, Chemical	1.59640572116
+36.1584478361	Energy & Fuels	1.15473296157
+36.1584478361	Agricultural Engineering	0.985684052316
 
 #########################
 {urban, land, citi}
-52.2815142923	Environmental Studies	8.54377382413
-52.2815142923	Economics	7.15719148914
-52.2815142923	Engineering, Civil	6.48433941195
-52.2815142923	Environmental Sciences	4.55183914549
-52.2815142923	Engineering, Environmental	2.57128416318
+55.2849268953	Environmental Studies	8.54505231112
+55.2849268953	Economics	6.33217648903
+55.2849268953	Environmental Sciences	5.60022393464
+55.2849268953	Engineering, Civil	5.43715567532
+55.2849268953	Engineering, Environmental	3.07597524435
 
 #########################
-{vehicl, charg, electr}
-33.9776392065	Economics	5.68785192843
-33.9776392065	Engineering, Civil	4.51379602116
-33.9776392065	Energy & Fuels	4.30423163937
-33.9776392065	Engineering, Electrical & Electronic	2.89974637842
-33.9776392065	Environmental Studies	1.9746711567
+{vehicl, electr, charg}
+38.028631839	Energy & Fuels	5.57769223994
+38.028631839	Economics	5.21393634883
+38.028631839	Engineering, Civil	4.57149947088
+38.028631839	Engineering, Electrical & Electronic	2.70842057778
+38.028631839	Environmental Studies	2.16348034918
 
 #########################
 {wast, manag, solid}
-54.1466467656	Engineering, Environmental	25.7308495625
-54.1466467656	Environmental Sciences	11.2455798364
-54.1466467656	Environmental Studies	3.12179326992
-54.1466467656	Economics	1.07580880975
-54.1466467656	Energy & Fuels	0.95945845749
+55.4105181419	Engineering, Environmental	25.8326591309
+55.4105181419	Environmental Sciences	11.2645947939
+55.4105181419	Environmental Studies	2.88640067418
+55.4105181419	Energy & Fuels	1.44069889488
+55.4105181419	Economics	1.01798135816
+
+#########################
+{water, heat, suppli}
+22.3725359285	Environmental Sciences	3.49845985212
+22.3725359285	Construction & Building Technology	3.03698002772
+22.3725359285	Engineering, Environmental	2.70063204897
+22.3725359285	Energy & Fuels	2.60585484648
+22.3725359285	Engineering, Civil	1.24350176463
 
