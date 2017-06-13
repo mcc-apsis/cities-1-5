@@ -175,6 +175,8 @@ def main():
     abstracts = [x.split("Published by Elsevier")[0] for x in abstracts]
     abstracts = [x.split("Copyright (C)")[0] for x in abstracts]
     abstracts = [re.split("\. \(C\) [1-2][0-9]{3} ",x)[0] for x in abstracts]
+    abstracts = [re.split("\. \(C\) [1-2][0-9]{3} ",x)[0] for x in abstracts]
+    #abstracts = [re.sub('[Mm]odel|[Aa]lgorithm','',x) for x in abstracts]
     docsizes = [len(x) for x in abstracts]
     ids = [x.UT for x in docs.iterator()]
 
@@ -208,7 +210,7 @@ def main():
 
     Ks = [15,16,17,18,19,20,21,21,23,24]
     Ks = list(range(15,35))
-    Ks = [21,22,23]
+    Ks = [23,24,25,26]
     for i in range(len(Ks)):
         if i > 500:
             recreate_indexes = True

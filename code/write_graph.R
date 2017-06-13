@@ -39,7 +39,7 @@ cors[lower.tri(cors, diag = TRUE)] <- 0
 g <- as.undirected(graph.adjacency(as.matrix(cors), weighted = TRUE, 
                                    mode = "upper"))
 
-q <- 'SELECT "tmv_app_topic"."title", "tmv_app_topic"."score" FROM "tmv_app_topic" WHERE "tmv_app_topic"."run_id_id" = 96'
+q <- 'SELECT "tmv_app_topic"."title", "tmv_app_topic"."score" FROM "tmv_app_topic" WHERE "tmv_app_topic"."run_id_id" = 181'
 
 tscores <- data.frame(dbGetQuery(con, q)) %>%
   arrange(title)
@@ -49,4 +49,4 @@ b1 <- tscores$score
 #V(g)$label <- V(g)
 V(g)$lsize <- b1 * 30/max(b1)
 
-write.graph(g,file="plots/96_025.graphml", format="graphml")
+write.graph(g,file="plots/181_025.graphml", format="graphml")
