@@ -97,3 +97,8 @@ growth <- ggplot() +
 growth
 ggsave("plots/total_growth.png")
 
+library(gridExtra)
+
+png("plots/growth_combined.png",width=1000,height=600)
+grid.arrange(growth,pn,ncol=2)
+dev.off()
