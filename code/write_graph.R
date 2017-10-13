@@ -43,7 +43,8 @@ cors[lower.tri(cors, diag = TRUE)] <- 0
 g <- as.undirected(graph.adjacency(as.matrix(cors), weighted = TRUE, 
                                    mode = "upper"))
 
-q <- 'SELECT "tmv_app_topic"."title", "tmv_app_topic"."score" FROM "tmv_app_topic" WHERE "tmv_app_topic"."run_id_id" = 181'
+q <- 'SELECT "tmv_app_topic"."title", "tmv_app_topic"."score", "tmv_app_topic"."growth"
+  FROM "tmv_app_topic" WHERE "tmv_app_topic"."run_id_id" = 181'
 
 tscores <- data.frame(dbGetQuery(con, q)) %>%
   arrange(title)

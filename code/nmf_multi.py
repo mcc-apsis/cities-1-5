@@ -45,7 +45,7 @@ import subprocess
 sys.stdout.flush()
 
 # import file for easy access to browser database
-sys.path.append('/home/galm/software/tmv/BasicBrowser/')
+sys.path.append('/home/galm/software/django/tmv/BasicBrowser/')
 
 # sys.path.append('/home/max/Desktop/django/BasicBrowser/')
 import db as db
@@ -211,6 +211,7 @@ def main():
     Ks = [15,16,17,18,19,20,21,21,23,24]
     Ks = list(range(15,35))
     Ks = [23,24,25,26]
+    Ks = list(range(20,30))
     for i in range(len(Ks)):
         if i > 500:
             recreate_indexes = True
