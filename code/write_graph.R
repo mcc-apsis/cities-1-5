@@ -8,6 +8,7 @@ library(slam)
 library(topicmodels)
 library(tidyr)
 library(igraph)
+library(ggplot2)
 
 source("/home/galm/pg_keys.R")
 
@@ -20,14 +21,18 @@ con <- dbConnect(drv, dbname = "tmv_app",
                  host = "localhost", port = 5432,
                  user = pg_user, password = pg_pw)
 
+qid <- 1603
+run_id <- 359
 
-q <- 'SELECT "tmv_app_topic"."title", T3."title", "tmv_app_topiccorr"."score", "tmv_app_topiccorr"."ar"
+
+
+q <- paste0('SELECT "tmv_app_topic"."title", T3."title", "tmv_app_topiccorr"."score", "tmv_app_topiccorr"."ar"
   FROM "tmv_app_topiccorr" 
   LEFT OUTER JOIN "tmv_app_topic" ON ("tmv_app_topiccorr"."topic_id" = "tmv_app_topic"."id") 
   LEFT OUTER JOIN "tmv_app_topic" T3 ON ("tmv_app_topiccorr"."topiccorr_id" = T3."id") 
-  WHERE ("tmv_app_topiccorr"."run_id" = 181 
+  WHERE ("tmv_app_topiccorr"."run_id" = ',run_id,' 
   AND "tmv_app_topiccorr"."score" > 0.025 
-  AND "tmv_app_topiccorr"."ar" = -1)'
+  AND "tmv_app_topiccorr"."ar" = -1)')
 
 cors <- data.frame(dbGetQuery(con, q)) %>%
   select(-ar) %>%
@@ -43,8 +48,8 @@ cors[lower.tri(cors, diag = TRUE)] <- 0
 g <- as.undirected(graph.adjacency(as.matrix(cors), weighted = TRUE, 
                                    mode = "upper"))
 
-q <- 'SELECT "tmv_app_topic"."title", "tmv_app_topic"."score", "tmv_app_topic"."growth"
-  FROM "tmv_app_topic" WHERE "tmv_app_topic"."run_id_id" = 181'
+q <- paste0('SELECT "tmv_app_topic"."title", "tmv_app_topic"."score", "tmv_app_topic"."growth"
+  FROM "tmv_app_topic" WHERE "tmv_app_topic"."run_id_id" = ',run_id)
 
 tscores <- data.frame(dbGetQuery(con, q)) %>%
   arrange(title)
@@ -77,7 +82,7 @@ for (ar in seq(1,5)) {
   FROM "tmv_app_topiccorr" 
 LEFT OUTER JOIN "tmv_app_topic" ON ("tmv_app_topiccorr"."topic_id" = "tmv_app_topic"."id") 
 LEFT OUTER JOIN "tmv_app_topic" T3 ON ("tmv_app_topiccorr"."topiccorr_id" = T3."id") 
-WHERE ("tmv_app_topiccorr"."run_id" = 181 
+WHERE ("tmv_app_topiccorr"."run_id" = ',run_id,' 
 AND "tmv_app_topiccorr"."score" > 0.0 
 AND "tmv_app_topiccorr"."ar" = ',ar,')')
   
@@ -135,14 +140,14 @@ ggplot() +
     linetype=2
   )
 
-q <- 'SELECT "tmv_app_doctopic"."doc_id", "tmv_app_topic"."title", 
+q <- paste0('SELECT "tmv_app_doctopic"."doc_id", "tmv_app_topic"."title", 
   "tmv_app_doctopic"."scaled_score", "scoping_doc"."PY" 
   FROM "tmv_app_doctopic" 
   LEFT OUTER JOIN "scoping_doc" 
   ON ("tmv_app_doctopic"."doc_id" = "scoping_doc"."UT") 
   LEFT OUTER JOIN "tmv_app_topic" 
   ON ("tmv_app_doctopic"."topic_id" = "tmv_app_topic"."id") 
-  WHERE "tmv_app_doctopic"."run_id" = 181'
+  WHERE "tmv_app_doctopic"."run_id" = ',run_id)
 
 gamma <- data.frame(dbGetQuery(con, q))
 

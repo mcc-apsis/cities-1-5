@@ -22,6 +22,8 @@ con <- dbConnect(drv, dbname = "tmv_app",
 ## Colorscale 
 APscale <- brewer.pal(6,"Spectral")
 
+qid <- 1603
+
 ##############################################################
 ## Get all the papers and show by OECD cat
 q <- paste0('SELECT "scoping_doc"."UT", "scoping_doc"."PY", "scoping_wc"."oecd", "scoping_wc"."oecd_fos_text", "scoping_wc"."text" as "WC" FROM "scoping_doc"
@@ -29,7 +31,7 @@ q <- paste0('SELECT "scoping_doc"."UT", "scoping_doc"."PY", "scoping_wc"."oecd",
   INNER JOIN "scoping_wc_doc" ON ("scoping_doc"."UT" = "scoping_wc_doc"."doc_id") 
   INNER JOIN "scoping_wc" ON ("scoping_wc_doc"."wc_id" = "scoping_wc"."id")
   LEFT OUTER JOIN "scoping_wosarticle" ON ("scoping_doc"."UT" = "scoping_wosarticle"."doc_id") 
-  WHERE "scoping_doc_query"."query_id" = ',1281)
+  WHERE "scoping_doc_query"."query_id" = ',qid)
 
 alldocs <- data.frame(dbGetQuery(con, q)) 
 
