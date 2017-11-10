@@ -1,26 +1,28 @@
 ,growth,title
-0,37.2448654700441,"{energi, build, consumpt}"
-1,-19.659099568765,"{wast, manag, solid}"
-2,-16.58607136873,"{price, congest, road}"
-3,29.0975766101935,"{travel, mode, choic}"
-4,29.8303275262792,"{emiss, carbon, ghg}"
-5,-1.91675289980935,"{treatment, wastewat, plant}"
-6,32.2673643057855,"{model, network, optim}"
-7,8.32540809032256,"{air, pollut, qualiti}"
-8,13.8841077584731,"{activ, school, health}"
-9,66.3613494781989,"{brt, bus, system}"
-10,-19.3418911829042,"{toll, lane, link}"
-11,32.267698292318,"{heat, thermal, comfort}"
-12,18.2225671440323,"{climat, chang, mitig}"
-13,135.42122069973,"{green, build, roof}"
-14,22.1754857458726,"{bus, servic, oper}"
-15,34.0048567107838,"{water, heat, suppli}"
-16,9.6176880055163,"{transport, public, access}"
-17,14.044720900165,"{recycl, household, collect}"
-18,76.2878246127562,"{vehicl, electr, charg}"
-19,30.3948774438073,"{transit, rail, station}"
-20,47.2718986408732,"{urban, land, citi}"
-21,18.2663874145001,"{polici, instrument, effect}"
-22,57.7158547427161,"{park, space, price}"
-23,38.983610372094,"{bicycl, cycl, cyclist}"
-24,28.128131710603,"{develop, sustain, plan}"
+0,-6.85346605216767,System design
+1,-6.10985918334164,Travel behaviour
+2,6.2053497168506,Thermal comfort
+3,-8.13512401456101,e-Vehicles
+4,-13.8645176754312,Waste water
+5,-2.64401005536585,Rail transit
+6,-5.01868185227891,Air quality
+7,-22.4995259010456,Climate change mitigation
+8,-13.0540896704622,Heating & cooling systems
+9,7.45862758573628,Transport services & provisioning
+10,-0.629261065426234,Car parking
+11,5.04732152357423,Bus rapid transit
+12,-9.80792075598754,Road tolls
+13,-11.4654450625377,Planning & governance
+14,-2.67013608163001,Active travel
+15,-2.86542326571543,Network optimisation
+16,-19.532375026705,Energy efficiency & consumption
+17,2.37843952528679,Building energy standards
+18,1.56834150349734,Urban form
+19,-17.9419266541695,GHG emissions
+20,-27.3370578767956,Waste management
+21,-13.4485682961597,Public transport
+22,-20.8437111951164,Congestion charging
+23,-4.79318256677555,Household recycling
+24,17.8054469962882,Charging stations
+25,-0.100455372612059,Building water use
+26,1.65269636976125,Cycling
